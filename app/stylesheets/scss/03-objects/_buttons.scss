@@ -4,10 +4,15 @@
     border-radius: 8px;
     border: none;
     width: 100%;
-    max-width: 175px;
-    padding: 16px 27px 16px 26px;
+    padding: 11px 14.5px 11px 13.5px;
+    max-width: 150px;
     cursor: pointer;
     transition: 0.2s ease;
+    line-height: 26px;
+    @include breakpoint($md){
+        padding: 16px 27px 16px 26px;
+        max-width: 175px;
+    }
 }
 
 .btn-1 {
