@@ -29,3 +29,11 @@ h3 {
     font-size: rem(24px);
     line-height: 28px;
 }
+
+button {
+    font-weight: 700;
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
+    font-size: rem(16px);
+    color: var(--color-font-1)
+}

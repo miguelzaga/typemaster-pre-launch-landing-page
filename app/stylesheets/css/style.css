@@ -136,6 +136,7 @@ table {
 :root {
   --color-font-1: #162542;
   --color-font-2: #7b8bad;
+  --color-font-3: #fff;
   --color-btn-1: #f16718;
   --color-btn-1--hover: #ff9b62;
   --color-btn-2: #e8eff2;
@@ -192,6 +193,45 @@ h2 {
 h3 {
   font-size: 1.5rem;
   line-height: 28px;
+}
+
+button {
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-font-1);
+}
+
+.btn-1 {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  max-width: 175px;
+  padding: 16px 27px 16px 26px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background-color: var(--color-btn-1);
+  color: var(--color-font-3);
+}
+.btn-1:hover {
+  background-color: var(--color-btn-1--hover);
+}
+
+.btn-2 {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  max-width: 175px;
+  padding: 16px 27px 16px 26px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background-color: var(--color-btn-2);
+  color: var(--color-font-1);
+}
+.btn-2:hover {
+  background-color: var(--color-btn-2--hover);
+  color: var(--color-font-3);
 }
 
 /*# sourceMappingURL=style.css.map */

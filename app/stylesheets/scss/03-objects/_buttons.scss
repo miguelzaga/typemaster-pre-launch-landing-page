@@ -1,2 +1,32 @@
 @use "./../01-abstracts/" as *;
 
+@mixin btn {
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    max-width: 175px;
+    padding: 16px 27px 16px 26px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-1 {
+    @include btn();
+    background-color: var(--color-btn-1);
+    color: var(--color-font-3);
+
+    &:hover {
+        background-color: var(--color-btn-1--hover);
+    }
+}
+
+.btn-2 {
+    @include btn();
+    background-color: var(--color-btn-2);
+    color: var(--color-font-1);
+
+    &:hover {
+        background-color: var(--color-btn-2--hover);
+        color: var(--color-font-3);
+    }
+}
