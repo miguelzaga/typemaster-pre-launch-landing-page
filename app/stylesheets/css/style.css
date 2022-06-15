@@ -133,6 +133,16 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --color-font-1: #162542;
+  --color-font-2: #7b8bad;
+  --color-btn-1: #f16718;
+  --color-btn-1--hover: #ff9b62;
+  --color-btn-2: #e8eff2;
+  --color-btn-2--hover: #162542;
+  --color-bg: #fff;
+}
+
 html {
   box-sizing: border-box;
 }
