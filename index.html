@@ -44,7 +44,10 @@
                         <b class="hero__b">Release on 5/27</b>
                     </footer>
                 </div>
-                <img class="hero__img" src="./app/assets/mobile/image-keyboard.jpg" alt="Mechanical keyboard" />
+                <picture class="hero__img">
+                  <source media="(min-width: )" srcset="">
+                  <img src="./app/assets/mobile/image-keyboard.jpg" alt="Mechanical keyboard" />
+                </picture>
             </section>
             <section class="content">
                 <div class="content__img-container">
@@ -56,8 +59,9 @@
                             alt="Mechanical keyboard next to a phone"
                         />
                     </picture>
+                    <picture class="content__img-2">
+                      <source media="(min-width: )" srcset="" />
                     <img
-                        class="content__img-2"
                         src="./app/assets/mobile/image-glass-and-keyboard.jpg"
                         alt="Mechanical keyboard in front of a laptop"
                     />

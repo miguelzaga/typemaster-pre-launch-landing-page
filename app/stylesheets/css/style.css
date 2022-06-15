@@ -298,9 +298,12 @@ b {
   gap: 32px;
 }
 .hero__img {
+  position: relative;
+}
+.hero__img img {
   border-radius: 20px;
-  width: 372px;
   max-width: none;
+  width: clamp(100px, 100vw, 375px);
 }
 
 .content {
@@ -315,7 +318,7 @@ b {
   margin-bottom: 75px;
 }
 .content__img-1 {
-  width: 129px;
+  max-width: 129px;
   position: relative;
 }
 .content__img-1 img {
@@ -333,8 +336,10 @@ b {
   border-radius: 20px;
 }
 .content__img-2 {
+  max-width: 220px;
+}
+.content__img-2 img {
   border-radius: 20px;
-  width: 220px;
 }
 .content__content {
   text-align: center;

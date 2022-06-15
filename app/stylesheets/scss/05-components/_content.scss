@@ -13,7 +13,7 @@
     }
 
     &__img-1 {
-        width: 129px;
+        max-width: 129px;
         position: relative;
 
         & img {
@@ -34,8 +34,11 @@
     }
 
     &__img-2 {
-        border-radius: 20px;
-        width: 220px;
+        max-width: 220px;
+
+        & img {
+            border-radius: 20px;
+        }
     }
 
     &__content {

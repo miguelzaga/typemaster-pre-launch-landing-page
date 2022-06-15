@@ -22,10 +22,13 @@
     }
 
     &__img {
-        // position: relative;
-        // left: 24px;
-        border-radius: 20px;
-        width: 372px;
-        max-width: none;
+        position: relative;
+        
+        & img {
+            border-radius: 20px;
+            max-width: none;
+            // width: 372px;
+            width: clamp(100px, 100vw, 375px)
+        }
     }
 }
