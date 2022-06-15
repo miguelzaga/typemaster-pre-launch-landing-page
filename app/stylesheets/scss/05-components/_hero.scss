@@ -1,0 +1,31 @@
+@use "../01-abstracts/" as *;
+
+.hero {
+    margin-bottom: 24px;
+
+    &__content {
+        margin-bottom: 64px;
+    }
+
+    &__h {
+        margin-bottom: 32px;
+    }
+
+    &__p {
+        margin-bottom: 32px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__img {
+        // position: relative;
+        // left: 24px;
+        border-radius: 20px;
+        width: 372px;
+        max-width: none;
+    }
+}

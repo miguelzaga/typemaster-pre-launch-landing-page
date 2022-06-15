@@ -146,6 +146,8 @@ table {
 
 body {
   background-color: var(--color-bg);
+  padding: 23px 24px 50px;
+  overflow-x: hidden;
 }
 
 html {
@@ -174,6 +176,7 @@ body {
   font-weight: 500;
   color: var(--color-font-2);
   font-size: 1rem;
+  line-height: 26px;
 }
 
 h1,
@@ -185,8 +188,18 @@ h3 {
 }
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 56px;
+  font-size: 2.375rem;
+  line-height: 1;
+}
+@media (min-width: 320px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
@@ -205,6 +218,11 @@ button {
   text-transform: uppercase;
   font-size: 1rem;
   color: var(--color-font-1);
+}
+
+b {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .btn-1 {
@@ -255,7 +273,34 @@ button {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 23px 24px 64px;
+  margin-bottom: 64px;
+}
+
+.main {
+  margin: 64px 0 96px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+.hero__content {
+  margin-bottom: 64px;
+}
+.hero__h {
+  margin-bottom: 32px;
+}
+.hero__p {
+  margin-bottom: 32px;
+}
+.hero__footer {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero__img {
+  border-radius: 20px;
+  width: 372px;
+  max-width: none;
 }
 
 /*# sourceMappingURL=style.css.map */
