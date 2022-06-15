@@ -1,0 +1,19 @@
+@use "../01-abstracts/" as *;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 64px;
+    text-align: center;
+
+    &__cell {
+        &-icon {
+            margin: 0 auto 48px;
+        }
+
+        &-h {
+            margin-bottom: 24px;
+        }
+
+    }
+}

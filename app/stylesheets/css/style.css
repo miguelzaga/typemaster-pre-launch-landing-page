@@ -270,6 +270,16 @@ b {
   color: var(--color-font-3);
 }
 
+.icon {
+  background-color: var(--color-btn-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -350,6 +360,24 @@ b {
 .content__h {
   max-width: 255px;
   margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 64px;
+  text-align: center;
+}
+.grid__cell-icon {
+  margin: 0 auto 48px;
+}
+.grid__cell-h {
+  margin-bottom: 24px;
+}
+
+.br::after {
+  content: "\a";
+  white-space: pre;
 }
 
 /*# sourceMappingURL=style.css.map */
