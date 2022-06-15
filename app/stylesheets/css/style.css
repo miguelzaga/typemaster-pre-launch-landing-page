@@ -221,7 +221,6 @@ button {
 }
 
 b {
-  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -286,6 +285,10 @@ b {
   margin-bottom: 64px;
 }
 
+.footer {
+  text-align: center;
+}
+
 .main {
   margin-bottom: 96px;
 }
@@ -306,6 +309,9 @@ b {
   display: flex;
   align-items: center;
   gap: 32px;
+}
+.hero__b {
+  text-transform: uppercase;
 }
 .hero__img {
   position: relative;
