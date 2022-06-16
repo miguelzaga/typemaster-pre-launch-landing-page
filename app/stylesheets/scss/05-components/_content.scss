@@ -3,6 +3,10 @@
 .content {
     margin-bottom: 111px;
 
+    @include breakpoint($md){
+        margin-bottom: 142px;
+    }
+
     &__img-container {
         display: flex;
         position: relative;
@@ -10,18 +14,29 @@
         width: 100vw;
         left: calc(($margin-sm + 22px) * (-1));
         margin-bottom: 75px;
+
+        @include breakpoint($md) {
+            gap: 30px;
+            width: 100%;
+            left: 0;
+            margin-bottom: 72px;
+        }
     }
 
     &__img-1 {
         max-width: 129px;
         position: relative;
 
+        @include breakpoint($md){
+            max-width: 214px;
+        }
+
         & img {
             border-radius: 20px;
         }
 
         ::after {
-            content: "test";
+            content: "";
             position: absolute;
             width: 100%;
             height: 100%;
@@ -36,6 +51,10 @@
     &__img-2 {
         max-width: 220px;
 
+        @include breakpoint($md){
+            max-width: 445px;
+        }
+
         & img {
             border-radius: 20px;
         }
@@ -46,10 +65,21 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        gap: 24px;
+        
+        @include breakpoint($md){
+            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 36px;
+        }
     }
 
     &__h {
         max-width: 255px;
-        margin-bottom: 24px;
+    }
+
+    &__p {
+        max-width: 398px;
     }
 }
