@@ -24,7 +24,7 @@ h1 {
         font-size: rem(48px);
     }
 
-    @include breakpoint($md) {
+    @include breakpoint($lg) {
         font-size: rem(56px);
     }
 }

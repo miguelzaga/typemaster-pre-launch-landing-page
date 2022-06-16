@@ -6,6 +6,6 @@ body {
     overflow-x: hidden;
     
     @include breakpoint($md){
-        padding: 40px 40px 43px 39px;
+        padding: 40px $margin-md 43px calc($margin-md - 1px);
     }
 }
