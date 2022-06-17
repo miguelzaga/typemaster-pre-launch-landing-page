@@ -1,0 +1,10 @@
+@use "../01-abstracts/" as *;
+
+.wrapper {
+    padding: 23px $margin-sm 50px;
+    overflow-x: clip;
+
+    @include breakpoint($md) {
+        padding: 40px $margin-md 43px calc($margin-md - 1px);
+    }
+}

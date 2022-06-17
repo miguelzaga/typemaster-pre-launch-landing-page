@@ -2,10 +2,4 @@
 
 body {
     background-color: var(--color-bg);
-    padding: 23px $margin-sm 50px;
-    overflow-x: hidden;
-    
-    @include breakpoint($md){
-        padding: 40px $margin-md 43px calc($margin-md - 1px);
-    }
 }

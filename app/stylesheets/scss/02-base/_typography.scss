@@ -20,7 +20,7 @@ h1 {
     font-size: rem(38px);
     line-height: 1;
 
-    @include breakpoint($sm) {
+    @include breakpoint(calc($sm + 20px)) {
         font-size: rem(48px);
     }
 
