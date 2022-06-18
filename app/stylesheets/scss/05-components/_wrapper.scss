@@ -7,4 +7,17 @@
     @include breakpoint($md) {
         padding: 40px $margin-md 43px calc($margin-md - 1px);
     }
+
+    @include breakpoint($md-lg) {
+        max-width: 1110px;
+        margin: auto;
+    }
+
+    @include breakpoint($lg) {
+        padding: 55px 0 39px;
+    }
+
+    @include breakpoint($x-lg) {
+        overflow-x: unset;
+    }
 }

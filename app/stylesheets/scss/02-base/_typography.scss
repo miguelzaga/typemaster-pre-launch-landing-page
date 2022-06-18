@@ -6,6 +6,10 @@ body {
     color: var(--color-font-2);
     font-size: rem(16px);
     line-height: 26px;
+
+    @include breakpoint($md-lg) {
+        font-size: rem(18px);
+    }
 }
 
 h1,
@@ -24,7 +28,7 @@ h1 {
         font-size: rem(48px);
     }
 
-    @include breakpoint($lg) {
+    @include breakpoint($md-lg) {
         font-size: rem(56px);
     }
 }
