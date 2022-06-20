@@ -313,13 +313,9 @@ b {
     margin: auto;
   }
 }
-@media (min-width: 1024px) {
-  .wrapper {
-    padding: 55px 0 39px;
-  }
-}
 @media (min-width: 1440px) {
   .wrapper {
+    padding: 55px 0 39px;
     overflow-x: unset;
   }
 }
@@ -458,6 +454,11 @@ b {
 @media (min-width: 640px) {
   .content__img-1 {
     max-width: 214px;
+  }
+}
+@media (min-width: 1024px) {
+  .content__img-1 {
+    max-width: 255px;
   }
 }
 .content__img-1 img {

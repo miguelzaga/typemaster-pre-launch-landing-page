@@ -31,6 +31,10 @@
             max-width: 214px;
         }
 
+        @include breakpoint($lg){
+            max-width: 255px;
+        }
+
         & img {
             border-radius: 20px;
         }

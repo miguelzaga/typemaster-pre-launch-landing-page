@@ -13,11 +13,8 @@
         margin: auto;
     }
 
-    @include breakpoint($lg) {
-        padding: 55px 0 39px;
-    }
-
     @include breakpoint($x-lg) {
+        padding: 55px 0 39px;
         overflow-x: unset;
     }
 }
