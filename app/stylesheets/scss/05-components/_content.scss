@@ -2,9 +2,19 @@
 
 .content {
     margin-bottom: 111px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-    @include breakpoint($md){
+    @include breakpoint($md) {
         margin-bottom: 142px;
+    }
+
+    @include breakpoint($lg) {
+        margin-bottom: 168px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 125px;
     }
 
     &__img-container {
@@ -21,17 +31,22 @@
             left: 0;
             margin-bottom: 72px;
         }
+
+        @include breakpoint($lg) {
+            width: auto;
+            margin-bottom: 0;
+        }
     }
 
     &__img-1 {
         max-width: 129px;
         position: relative;
 
-        @include breakpoint($md){
+        @include breakpoint($md) {
             max-width: 214px;
         }
 
-        @include breakpoint($lg){
+        @include breakpoint($lg) {
             max-width: 255px;
         }
 
@@ -49,13 +64,14 @@
             mix-blend-mode: multiply;
             background-color: var(--color-btn-1);
             border-radius: 20px;
+            opacity: 0.6;
         }
     }
 
     &__img-2 {
         max-width: 220px;
 
-        @include breakpoint($md){
+        @include breakpoint($md) {
             max-width: 445px;
         }
 
@@ -70,12 +86,20 @@
         flex-flow: column nowrap;
         align-items: center;
         gap: 24px;
-        
-        @include breakpoint($md){
+
+        @include breakpoint($md) {
             text-align: left;
             flex-direction: row;
             justify-content: space-between;
             gap: 36px;
+        }
+
+        @include breakpoint($lg) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 27px;
+            max-width: 255px;
+            align-self: center;
         }
     }
 
@@ -85,5 +109,16 @@
 
     &__p {
         max-width: 398px;
+    }
+
+    &__pattern {
+        position: absolute;
+        bottom: 0;
+        left: calc((30px + 255px) * (-1));
+        display: none;
+
+        @include breakpoint($x-lg) {
+            display: block;
+        }
     }
 }

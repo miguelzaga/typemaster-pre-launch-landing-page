@@ -176,11 +176,6 @@ body {
   font-size: 1rem;
   line-height: 26px;
 }
-@media (min-width: 960px) {
-  body {
-    font-size: 1.125rem;
-  }
-}
 
 h1,
 h2,
@@ -338,15 +333,6 @@ b {
     gap: 125px;
     margin-bottom: 30px;
   }
-  .hero::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "Test";
-    width: 225px;
-    height: 240px;
-    background-image: url("../../../../app/assets/shared/pattern-square.svg");
-  }
 }
 .hero__content {
   margin-bottom: 64px;
@@ -377,6 +363,11 @@ b {
 @media (min-width: 640px) {
   .hero__p {
     margin-bottom: 39px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__p {
+    font-size: 1.125rem;
   }
 }
 .hero__footer {
@@ -425,10 +416,21 @@ b {
 
 .content {
   margin-bottom: 111px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 @media (min-width: 640px) {
   .content {
     margin-bottom: 142px;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    margin-bottom: 168px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 125px;
   }
 }
 .content__img-container {
@@ -445,6 +447,12 @@ b {
     width: 100%;
     left: 0;
     margin-bottom: 72px;
+  }
+}
+@media (min-width: 1024px) {
+  .content__img-container {
+    width: auto;
+    margin-bottom: 0;
   }
 }
 .content__img-1 {
@@ -474,6 +482,7 @@ b {
   mix-blend-mode: multiply;
   background-color: var(--color-btn-1);
   border-radius: 20px;
+  opacity: 0.6;
 }
 .content__img-2 {
   max-width: 220px;
@@ -501,11 +510,31 @@ b {
     gap: 36px;
   }
 }
+@media (min-width: 1024px) {
+  .content__content {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 27px;
+    max-width: 255px;
+    align-self: center;
+  }
+}
 .content__h {
   max-width: 255px;
 }
 .content__p {
   max-width: 398px;
+}
+.content__pattern {
+  position: absolute;
+  bottom: 0;
+  left: -285px;
+  display: none;
+}
+@media (min-width: 1440px) {
+  .content__pattern {
+    display: block;
+  }
 }
 
 .grid {
