@@ -290,6 +290,11 @@ b {
     margin-bottom: 62px;
   }
 }
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 83px;
+  }
+}
 
 .footer {
   text-align: center;
