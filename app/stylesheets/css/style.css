@@ -144,12 +144,10 @@ table {
   --color-bg: #fff;
 }
 
-html {
-  overflow-x: clip;
-}
-
+html,
 body {
   background-color: var(--color-bg);
+  overflow-x: hidden;
 }
 
 html {
@@ -299,7 +297,6 @@ b {
 
 .wrapper {
   padding: 23px 24px 50px;
-  overflow-x: clip;
 }
 @media (min-width: 640px) {
   .wrapper {
@@ -315,7 +312,6 @@ b {
 @media (min-width: 1440px) {
   .wrapper {
     padding: 55px 0 39px;
-    overflow-x: unset;
   }
 }
 
