@@ -1,5 +1,9 @@
 @use "./../01-abstracts/" as *;
 
+html {
+    overflow-x: clip;
+}
+
 body {
     background-color: var(--color-bg);
 }

@@ -14,6 +14,12 @@
         margin-bottom: 142px;
     }
 
+    @include breakpoint($lg){
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 30px;
+        margin-bottom: 128px;
+    }
+
     &__cell {
         @include breakpoint($md) {
             max-width: 281px;
@@ -24,6 +30,10 @@
 
             @include breakpoint($md) {
                 margin: 0 0 40px;
+            }
+
+            @include breakpoint($lg){
+                margin-bottom: 48px;
             }
         }
 
